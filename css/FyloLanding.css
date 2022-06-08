@@ -60,6 +60,7 @@ header {
 header .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header .logo img {
@@ -70,22 +71,25 @@ header nav ul {
     display: flex;
     gap: 0 50px;
 }
-header nav ul li a{
-color: black;
+
+header nav ul li a {
+    color: black;
 }
 
 @media(max-width:767px) {
-    html,body{
+    html, body {
         width: 100%;
         height: 100%;
         margin: 0;
         padding: 0;
         overflow-x: hidden;
     }
+
     header {
         font-family: 'Raleway', sans-serif;
         padding-top: 25px;
     }
+
     header .container {
         display: flex;
         justify-content: space-between;
@@ -277,6 +281,7 @@ color: black;
     position: relative;
     cursor: pointer;
     align-items: center;
+
 }
 
 .stay .text-stay .line:hover {
@@ -290,10 +295,12 @@ color: black;
 .stay .text-stay .line::before {
     content: "";
     position: absolute;
-    border: 1px solid hsl(170, 45%, 43%);
+    border-bottom: 1px solid hsl(170, 45%, 43%);
     width: 165px;
     top: 100%;
     margin-top: 3px;
+
+
 }
 
 .stay .text-stay .line:hover::before {
@@ -368,7 +375,7 @@ color: black;
     }
 
     .bg {
-        margin-top: -50px;
+        margin-top: -60px;
     }
 
     .stay .image-stay img {
@@ -389,20 +396,20 @@ color: black;
     }
 
     .stay .text-stay p:nth-child(2) {
-        width: 350px;
+        width: 320px;
         margin: 0 auto 20px;
         line-height: 1.2;
         text-align: left;
-        font-size: 15px;
+        font-size: 14px;
         color: hsl(0, 0%, 50%);
     }
 
     .stay .text-stay p:nth-child(3) {
-        width: 350px;
+        width: 320px;
         margin: 0 auto 20px;
         line-height: 1.2;
         text-align: left;
-        font-size: 15px;
+        font-size: 14px;
         color: hsl(0, 0%, 50%);
     }
 
@@ -419,7 +426,8 @@ color: black;
     }
 
     .stay .text-stay .line::before {
-        width: 155px;
+        width: 160px;
+        left: 26.5%;
     }
 
     .stay .card {
