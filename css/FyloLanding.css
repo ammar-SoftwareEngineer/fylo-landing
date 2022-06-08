@@ -70,6 +70,9 @@ header nav ul {
     display: flex;
     gap: 0 50px;
 }
+header nav ul li a{
+color: black;
+}
 
 @media(max-width:767px) {
     html,body{
