@@ -120,7 +120,7 @@ header nav ul li a {
 .landing .container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+
 
 }
 
@@ -179,6 +179,29 @@ header nav ul li a {
     max-width: 100%;
 }
 
+@media (max-width:991px) {
+    .landing .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .landing .image-landing img {
+        width: 450px;
+        margin-top: 0px;
+        max-width: 100%;
+        order: 1;
+    }
+
+    .landing .text-landing {
+        width: 510px;
+        margin-top: 20px;
+        order: 2;
+        text-align: center;
+    }
+}
+
 @media (max-width:767px) {
     .landing .image-landing img {
         width: 350px;
@@ -189,6 +212,7 @@ header nav ul li a {
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
     }
 
     .landing .text-landing {
@@ -360,6 +384,43 @@ header nav ul li a {
     font-size: 12px;
 }
 
+@media (max-width:991px) {
+    .stay .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .bg {
+        margin-top: -60px;
+        min-height: 90vh;
+    }
+
+    .stay .image-stay img {
+        width: 320px;
+        order: 1;
+        margin-top: 50px;
+    }
+
+    .stay .text-stay {
+        padding-top: 30px;
+        order: 2;
+
+    }
+
+    .stay .card {
+        margin-bottom: 100px;
+        margin-top: 50px;
+        background-color: white;
+        padding: 20px 40px;
+        border-radius: 5px;
+        width: 400px;
+        height: 240px;
+        max-width: 100%;
+    }
+}
+
 @media(max-width:767px) {
     .stay {
         background-image: url("../images/bg-curve-mobile.svg");
@@ -371,7 +432,6 @@ header nav ul li a {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
     }
 
     .bg {
@@ -534,6 +594,23 @@ header nav ul li a {
 
 .contact form input[type="submit"]:hover {
     filter: opacity(80%);
+}
+
+@media (max-width:991px) {
+    .contact .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 60px;
+    }
+
+    .contact .text-contact p {
+        color: white;
+        width: 300px;
+        text-align: left;
+        line-height: 1.5;
+        font-size: 15px;
+    }
 }
 
 @media(max-width:767px) {
